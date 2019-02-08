@@ -22,8 +22,6 @@
 @property(nonatomic, strong, setter=setCustomerUserID:) NSString *customerUserID;
 // Wraps calls to the AppsFlyerTracker currencyCode property.
 @property(nonatomic, strong) NSString *currencyCode;
-// Wraps calls to the AppsFlyerTracker appsFlyerDevKey property.
-@property(nonatomic, strong, setter=setAppsFlyerDevKey:) NSString *appsFlyerDevKey;
 // Wraps calls to the AppsFlyerTracker minTimeBetweenSessions property.
 @property(atomic) NSUInteger minTimeBetweenSessions;
 // Wraps calls to the AppsFlyerTracker deviceTrackingDisabled property.

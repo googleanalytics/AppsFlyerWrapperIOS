@@ -26,8 +26,7 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
   [FIRApp configure];
-  AppsFlyerTrackerWrapper *wrapper = [AppsFlyerTrackerWrapper sharedTracker];
-  wrapper.appsFlyerDevKey = @"your-dev-key";
+  [AppsFlyerTracker sharedTracker].appsFlyerDevKey = @"your-dev-key";
   [[AppsFlyerTrackerWrapper sharedTracker]
       trackEvent:@"test_event"
       withValues:@{@"param1" : @"value1", @"num_param" : @500}];

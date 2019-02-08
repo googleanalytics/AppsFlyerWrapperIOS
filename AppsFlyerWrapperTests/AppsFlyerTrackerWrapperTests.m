@@ -74,21 +74,6 @@
   XCTAssertEqual(currency, @"GBP");
 }
 
-- (void)testSetAppsFlyerDevKey {
-  NSString *appsFlyerDevKey = @"this-is-a-dev-key";
-  self.tracker.appsFlyerDevKey = appsFlyerDevKey;
-  OCMVerify([self.appsFlyerMock setAppsFlyerDevKey:appsFlyerDevKey]);
-  OCMVerify([self.googleAnalyticsMock setUserPropertyString:@"this-is-a-dev-key"
-                                                    forName:@"af_dev_key"]);
-}
-
-- (void)testAppsFlyerDevKey {
-  OCMStub([self.appsFlyerMock appsFlyerDevKey]).andReturn(@"this-is-a-dev-key");
-  NSString *appsFlyerDevKey = self.tracker.appsFlyerDevKey;
-  OCMVerify([self.appsFlyerMock appsFlyerDevKey]);
-  XCTAssertEqual(appsFlyerDevKey, @"this-is-a-dev-key");
-}
-
 - (void)testSetMinTimeBetweenSessions {
   NSUInteger time = 50;
   self.tracker.minTimeBetweenSessions = time;

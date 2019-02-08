@@ -92,15 +92,6 @@
   return _tracker.currencyCode;
 }
 
-- (void)setAppsFlyerDevKey:(NSString *)appsFlyerDevKey {
-  [_googleAnalytics setUserPropertyString:appsFlyerDevKey forName:@"af_dev_key"];
-  _tracker.appsFlyerDevKey = appsFlyerDevKey;
-}
-
-- (NSString *)appsFlyerDevKey {
-  return _tracker.appsFlyerDevKey;
-}
-
 - (void)setDeviceTrackingDisabled:(BOOL)deviceTrackingDisabled {
   [_googleAnalytics setAnalyticsCollectionEnabled:!deviceTrackingDisabled];
   _tracker.deviceTrackingDisabled = deviceTrackingDisabled;
