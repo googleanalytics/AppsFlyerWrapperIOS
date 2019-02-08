@@ -1,0 +1,8 @@
+target 'AppsFlyerWrapper' do
+  pod 'AppsFlyerFramework'
+  pod 'Firebase/Core'
+
+  target 'AppsFlyerWrapperTests' do
+    pod 'OCMock'
+  end
+end
