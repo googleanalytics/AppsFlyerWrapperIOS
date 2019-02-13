@@ -36,17 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		65A6374B21FBD57A0018944E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SupportingFiles/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65A6374B21FBD57A0018944E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SupportingFiles/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		65A6374D21FFA67B0018944E /* AppsFlyerTrackerWrapperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsFlyerTrackerWrapperTests.m; sourceTree = "<group>"; };
 		65A6374F21FFBD1C0018944E /* GoogleAnalyticsAdapterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAnalyticsAdapterTests.m; sourceTree = "<group>"; };
 		65C2160321E66E9900EF4F92 /* AppsFlyerWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppsFlyerWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65C2160721E66E9900EF4F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "SupportingFiles/main.m"; sourceTree = "<group>"; };
-		65C2160921E66E9900EF4F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "SupportingFiles/AppDelegate.h"; sourceTree = "<group>"; };
-		65C2160A21E66E9900EF4F92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "SupportingFiles/AppDelegate.m"; sourceTree = "<group>"; };
+		65C2160721E66E9900EF4F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../SupportingFiles/main.m; sourceTree = "<group>"; };
+		65C2160921E66E9900EF4F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SupportingFiles/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		65C2160A21E66E9900EF4F92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SupportingFiles/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		65C2161021E66E9900EF4F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		65C2161221E66E9900EF4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65C2161221E66E9900EF4F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		65C2161521E66E9900EF4F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		65C2161721E66E9900EF4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SupportingFiles/Info.plist"; sourceTree = "<group>"; };
+		65C2161721E66E9900EF4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
 		65C2161C21E66E9900EF4F92 /* AppsFlyerWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppsFlyerWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C2162221E66E9900EF4F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C2163921E66EC900EF4F92 /* AppsFlyerTrackerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFlyerTrackerWrapper.h; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				65C2161721E66E9900EF4F92 /* Info.plist */,
 				65C2160721E66E9900EF4F92 /* main.m */,
 			);
-			name = "SupportingFiles";
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		65C2161F21E66E9900EF4F92 /* AppsFlyerWrapperTests */ = {
@@ -344,7 +344,7 @@
 				65C2161021E66E9900EF4F92 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		65C2161421E66E9900EF4F92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -352,7 +352,7 @@
 				65C2161521E66E9900EF4F92 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -455,7 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/AppsFlyerWrapper/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrapper.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,7 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/AppsFlyerWrapper/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrapper.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
