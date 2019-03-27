@@ -12,13 +12,32 @@ In order to use the AppsFlyer wrapper:
 
 1.  [Follow the steps here](https://firebase.google.com/docs/analytics/ios/start)
     to set up the Google Analytics for Firebase SDK in your app.
-2.  Copy the source files inside the AppsFlyerWrapper directory into your 
-    project.
+2.  Copy the source files inside the AppsFlyerWrapper directory (ignoring
+    subdirectories) into your project.
 3.  Replace supported references to `[AppsFlyerTracker sharedInstance]` with
     `[AppsFlyerTrackerWrapper sharedInstance]`;
 
 Some methods are not supported by the wrapper. For these methods, directly call
 the base implementation in `[AppsFlyerTracker sharedInstance]`.
+
+### Supported Methods
+
+The following API methods and properties are supported in the AppsFlyer wrapper.
+Use the wrapper by replacing `[AppsFlyerTracker sharedTracker]` in these
+instances with `[AppsFlyerTrackerWrapper sharedTracker]`:
+
+#### Methods
+
+*   `[[AppsFlyerTracker sharedTracker] registerUninstall:]`
+*   `[[AppsFlyerTracker sharedTracker] trackEvent: withValue:]`
+*   `[[AppsFlyerTracker sharedTracker] trackEvent: withValues:]`
+
+#### Properties
+
+*   `[AppsFlyerTracker sharedTracker].currencyCode`
+*   `[AppsFlyerTracker sharedTracker].customerUserID`
+*   `[AppsFlyerTracker sharedTracker].deviceTrackingDisabled`
+*   `[AppsFlyerTracker sharedTracker].minTimeBetweenSessions`
 
 ### Using With Swift
 
